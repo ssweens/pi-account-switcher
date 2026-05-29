@@ -112,6 +112,12 @@ Switch OAuth accounts with:
 /accounts:list
 ```
 
+Or use the keyboard shortcut:
+
+```txt
+Ctrl+Shift+C
+```
+
 OAuth credentials are captured from Pi's auth file:
 
 ```txt

@@ -98,6 +98,12 @@ The local commands will be registered as `/dev:accounts:list`, `/dev:accounts:ad
 | `/system:export` | Export all accounts, providers, and state to a JSON file |
 | `/system:import` | Import accounts, providers, and state from a JSON file   |
 
+### Keyboard Shortcut
+
+| Shortcut       | Action                |
+| -------------- | --------------------- |
+| `Ctrl+Shift+C` | Open account selector |
+
 ---
 
 ## Adding Accounts
