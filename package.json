@@ -1,6 +1,6 @@
 {
   "name": "@ssweens/pi-account-switcher",
-  "version": "0.2.4",
+  "version": "0.3.2",
   "type": "module",
   "description": "Pi extension for quickly switching between multiple accounts/API keys per provider.",
   "license": "MIT",
@@ -12,13 +12,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ssweens/pi-packages.git",
-    "directory": "pi-account-switcher"
+    "url": "git+https://github.com/ssweens/pi-account-switcher.git"
   },
   "bugs": {
-    "url": "https://github.com/ssweens/pi-packages/issues"
+    "url": "https://github.com/ssweens/pi-account-switcher/issues"
   },
-  "homepage": "https://github.com/ssweens/pi-packages/tree/main/pi-account-switcher",
+  "homepage": "https://github.com/ssweens/pi-account-switcher#readme",
   "files": [
     "src",
     "!src/**/*.test.ts",
@@ -38,22 +37,24 @@
     "zod": "^4.4.3"
   },
   "peerDependencies": {
-    "@earendil-works/pi-ai": ">=0.99.1 <0.100.0",
-    "@earendil-works/pi-coding-agent": ">=0.99.1 <0.100.0",
-    "@earendil-works/pi-tui": ">=0.99.1 <0.100.0"
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
   },
   "devDependencies": {
-    "@earendil-works/pi-ai": "0.99.1",
-    "@earendil-works/pi-coding-agent": "0.99.1",
-    "@earendil-works/pi-tui": "0.99.1",
+    "@earendil-works/pi-ai": "^1.0.0",
+    "@earendil-works/pi-coding-agent": "^1.0.0",
+    "@earendil-works/pi-tui": "^1.0.0",
     "@types/node": "latest",
     "prettier": "^3.8.3",
+    "typebox": "^1.2.14",
     "typescript": "latest",
     "vitest": "latest"
   },
   "pi": {
     "extensions": [
-      "./src/extension.ts"
+      "./src/index.ts"
     ]
-  }
+  },
+  "packageManager": "pnpm@11.5.0+sha512.dbfcc4f81cf48597afd4bc391ffdf12c11f1a9fb83a395bfa6b0a2d9cc2fd8ffebafdb1ccbd529632153f793904c2615b7f09fe1a345473fd1c35845172a8eb1"
 }

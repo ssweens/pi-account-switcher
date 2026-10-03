@@ -1,9 +1,9 @@
 import type { Api, Credential, Model } from "@earendil-works/pi-ai";
 import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
-import type { AccountSwitcher } from "@/runtime";
-import type { AccountConfig, AccountSwitcherContext, ProviderConfig, SecretSource } from "@/types";
-import { COMMANDS } from "@/constants";
-import { accountUtil, commonUtil, errorUtil, piCredentialUtil, providerUtil, uiUtil } from "@/utils";
+import type { AccountSwitcher } from "../../runtime";
+import type { AccountConfig, AccountSwitcherContext, ProviderConfig, SecretSource } from "../../types";
+import { COMMANDS } from "../../constants";
+import { accountUtil, commonUtil, errorUtil, piCredentialUtil, providerUtil, uiUtil } from "../../utils";
 import { AccountCommand } from "./shared";
 
 export const useVerifyAccountsCommand = (pi: ExtensionAPI, runtime: AccountSwitcher) => {
